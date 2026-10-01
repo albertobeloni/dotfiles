@@ -6,6 +6,13 @@
 	command readonly base="$(command cd "$(command dirname "${BASH_SOURCE[0]}")" && command pwd)"
 	command readonly distribution="$(source /etc/os-release && echo ${ID:-})"
 
+	command source "${base}/modules/shell/root/etc/environment.d/80-xdg.conf"
+
+	command export XDG_CACHE_HOME
+	command export XDG_CONFIG_HOME
+	command export XDG_DATA_HOME
+	command export XDG_STATE_HOME
+
 	if command test -r "${base}/distributions/${distribution}.sh"
 	then
 		command source "${base}/distributions/${distribution}.sh"

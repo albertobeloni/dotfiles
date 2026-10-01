@@ -9,7 +9,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "center-floating",
 	match = {
-		floating = true,
+		float = true,
 	},
 	center = true,
 })

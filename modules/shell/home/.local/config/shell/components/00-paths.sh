@@ -1,1 +1,1 @@
-command export PATH="${PATH}:${HOME}/.local/bin"
+command export PATH="${HOME}/.local/bin:${PATH}"
