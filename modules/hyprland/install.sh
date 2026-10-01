@@ -1,1 +1,1 @@
-distribution arch && packages hyprland hyprpaper hypridle hyprlock wireplumber brightnessctl playerctl xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-keyring uswm libnewt greetd wl-clipboard cliphist grim slurp
+distribution arch && packages hyprland hyprpaper hypridle hyprlock wireplumber brightnessctl playerctl xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-keyring uwsm libnewt greetd wl-clipboard cliphist grim slurp
