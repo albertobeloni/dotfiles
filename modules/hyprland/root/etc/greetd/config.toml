@@ -6,5 +6,5 @@ command = "uwsm start hyprland.desktop"
 user = "YOURUSER"
 
 [default_session]
-command = "uwsm start hyprland.desktop'"
+command = "agreety --cmd 'uwsm start hyprland.desktop'"
 user = "greeter"
