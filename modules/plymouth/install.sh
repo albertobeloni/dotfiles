@@ -1,1 +1,1 @@
-distribution arch && packages plymouth greetd
+distribution arch && packages plymouth

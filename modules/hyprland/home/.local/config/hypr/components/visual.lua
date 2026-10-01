@@ -4,18 +4,23 @@ hl.config({
 		gaps_in = 8,
 		gaps_out = 24,
 		border_size = 1,
-
-		col = {
-			active_border = 0xfff2eada,
-			inactive_border = 0xff22242d,
-		},
-
 		layout = "scrolling",
+	},
+
+	group = {
+		col = {
+			border_active = ,
+			border_inactive = ,
+			border_locked_active = ,
+			border_locked_inactive = ,
+		},
+		groupbar = {
+			height = 16,
+		},
 	},
 
 	decoration = {
 		rounding = 0,
-
 		active_opacity = 1.0,
 		inactive_opacity = 1.0,
 
@@ -35,7 +40,6 @@ hl.config({
 	},
 
 	misc = {
-		background_color = 0xff181b25,
 		disable_hyprland_guiutils_check = true,
 		disable_hyprland_logo = true,
 		disable_splash_rendering = true,
