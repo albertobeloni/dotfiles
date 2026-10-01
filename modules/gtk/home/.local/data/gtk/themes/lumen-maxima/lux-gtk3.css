@@ -1,0 +1,47 @@
+/*
+ * Lumen Color Scheme — Lux Maxima (GTK 3)
+ * https://github.com/albertobeloni/lumen
+ */
+
+@define-color accent_color #3365cf;
+@define-color accent_bg_color #3365cf;
+@define-color accent_fg_color #ffffff;
+@define-color destructive_color #b64630;
+@define-color destructive_bg_color #b64630;
+@define-color destructive_fg_color #ffede9;
+@define-color success_color #007c32;
+@define-color success_bg_color #007c32;
+@define-color success_fg_color #e1f7dd;
+@define-color warning_color #846700;
+@define-color warning_bg_color #846700;
+@define-color warning_fg_color #ffefcf;
+@define-color error_color #b64630;
+@define-color error_bg_color #b64630;
+@define-color error_fg_color #ffede9;
+@define-color window_bg_color #fafafa;
+@define-color window_fg_color #4d4c4c;
+@define-color view_bg_color #ffffff;
+@define-color view_fg_color #4d4c4c;
+@define-color headerbar_bg_color #f7f7f7;
+@define-color headerbar_fg_color #4d4c4c;
+@define-color headerbar_border_color #4d4c4c;
+@define-color headerbar_backdrop_color #fafafa;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.122);
+@define-color headerbar_darker_shade_color rgba(0, 0, 0, 0.122);
+@define-color sidebar_bg_color #f7f7f7;
+@define-color sidebar_fg_color #4d4c4c;
+@define-color sidebar_backdrop_color #f8f8f8;
+@define-color sidebar_shade_color rgba(0, 0, 0, 0.071);
+@define-color sidebar_border_color rgba(0, 0, 0, 0.071);
+@define-color card_bg_color #ffffff;
+@define-color card_fg_color #4d4c4c;
+@define-color card_shade_color rgba(0, 0, 0, 0.071);
+@define-color thumbnail_bg_color #ffffff;
+@define-color thumbnail_fg_color #4d4c4c;
+@define-color dialog_bg_color #ffffff;
+@define-color dialog_fg_color #4d4c4c;
+@define-color popover_bg_color #ffffff;
+@define-color popover_fg_color #4d4c4c;
+@define-color popover_shade_color rgba(0, 0, 0, 0.071);
+@define-color shade_color rgba(0, 0, 0, 0.071);
+@define-color scrollbar_outline_color #ffffff;
