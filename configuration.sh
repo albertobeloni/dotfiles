@@ -20,6 +20,10 @@
 		command test "${1:-}" == "${distribution}"
 	}
 
+	message() {
+		command echo "${module}: ${1}" >> "${messages}" 2>&1
+	}
+
 	run() {
 		command local action
 		command local module
@@ -87,6 +91,15 @@
 	}
 
 	main() {
+
+		if command test -z "${1:-}"
+		then
+			main install
+			main configure
+
+			return "${?}"
+		fi
+
 		command local action
 
 		action="${1:-}"
@@ -111,6 +124,10 @@
 			done
 		fi
 
+		command local messages
+
+		messages="${base}/messages.log"
+
 		command local failed
 
 		failed=0
@@ -133,6 +150,12 @@
 				failed=1
 			fi
 		done
+
+		if command test -f "${messages}"
+		then
+			command echo "$(cat ${messages})"
+			command rm -f "${messages}"
+		fi
 
 		return "${failed}"
 	}

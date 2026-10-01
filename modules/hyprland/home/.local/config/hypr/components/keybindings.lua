@@ -1,9 +1,9 @@
-local terminal = "kitty"
+local terminal = "uwsm app -- kitty"
 
 local modifier = "SUPER"
 
 -- Hyprland: Exit
-hl.bind(modifier .. " + SHIFT + Escape", hl.dsp.exec_cmd("hyprctl dispatch 'hl.dsp.exit()'"))
+-- hl.bind(modifier .. " + SHIFT + Escape", hl.dsp.exec_cmd("hyprctl dispatch 'hl.dsp.exit()'"))
 
 -- Application: Terminal
 hl.bind(modifier .. " + Return", hl.dsp.exec_cmd(terminal))
@@ -36,11 +36,12 @@ end
 -- Workspace: Switch
 hl.bind(modifier .. " + Tab", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(modifier .. " + SHIFT + Tab", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind("ALT + SHIFT + Tab", hl.dsp.focus({ workspace = "e+1" }))
 
 -- Screen: Screenshot
-hl.bind(modifier .. " + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp)" "$(xdg-user-dir PICTURES)/Screenshots/$(date +\'%d%m%Y-%H%M%S\').png"'))
+hl.bind(modifier .. " + SHIFT + S", hl.dsp.exec_cmd([[grim -g "$(slurp)" "$(xdg-user-dir PICTURES)/Screenshots/$(date +'%Y%m%d-%H%M%S').png"]]))
 -- Screen: Lock
-hl.bind(modifier .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(modifier .. " + L", hl.dsp.exec_cmd("uwsm app -- hyprlock"))
 
 -- Function Keys
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
@@ -53,3 +54,11 @@ hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+
+-- Layout: Columns
+hl.bind(modifier .. " + period", hl.dsp.layout("move +col"))
+hl.bind(modifier .. " + comma", hl.dsp.layout("move -col"))
+hl.bind(modifier .. " + SHIFT + period", hl.dsp.layout("swapcol r"))
+hl.bind(modifier .. " + SHIFT + comma", hl.dsp.layout("swapcol l"))
+hl.bind(modifier .. " + equal", hl.dsp.layout("colresize +conf"))
+hl.bind(modifier .. " + minus", hl.dsp.layout("colresize -conf"))
