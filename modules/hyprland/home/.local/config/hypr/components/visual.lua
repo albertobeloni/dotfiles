@@ -8,12 +8,6 @@ hl.config({
 	},
 
 	group = {
-		col = {
-			border_active = ,
-			border_inactive = ,
-			border_locked_active = ,
-			border_locked_inactive = ,
-		},
 		groupbar = {
 			height = 16,
 		},

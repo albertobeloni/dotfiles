@@ -94,8 +94,8 @@
 
 		if command test -z "${1:-}"
 		then
-			main install
-			main configure
+			main -i
+			main -c
 
 			return "${?}"
 		fi
@@ -106,7 +106,7 @@
 
 		command shift
 
-		if command test "${action}" != "install" -a "${action}" != "configure"
+		if command test "${action}" != "-i" -a "${action}" != "-c"
 		then
 			usage
 		fi
@@ -141,6 +141,14 @@
 				failed=1
 
 				command continue
+			fi
+
+			if command test "${action}" == "-i"
+			then
+				action="install"
+			elif command test "${action}" == "-c"
+			then
+				action="configure"
 			fi
 
 			run "${action}" "${module}"
