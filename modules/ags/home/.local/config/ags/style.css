@@ -1,0 +1,63 @@
+/* Lumen nox-maxima, matching the Hyprland theme */
+
+window#launcher {
+	background: transparent;
+	color: #f1f1f1;
+}
+
+window#launcher .content {
+	margin-top: 160px;
+	min-width: 480px;
+	padding: 8px;
+	background: #1b1b1b;
+	border: 1px solid #303030;
+}
+
+window#launcher entry {
+	min-height: 40px;
+	padding: 0 12px;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background: #111111;
+	color: #f1f1f1;
+	font-size: 1.15em;
+}
+
+window#launcher entry:focus-within {
+	outline: 1px solid #628df3;
+	outline-offset: -1px;
+}
+
+window#launcher .results {
+	margin-top: 8px;
+}
+
+window#launcher .results button {
+	padding: 6px 12px;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	color: #e2e2e2;
+}
+
+window#launcher .results button:hover,
+window#launcher .results button:focus-visible {
+	background: #192e5e;
+	color: #f1f1f1;
+}
+
+window#launcher .results button:first-child {
+	background: #303030;
+}
+
+window#launcher .results button:first-child:hover,
+window#launcher .results button:first-child:focus-visible {
+	background: #192e5e;
+}
+
+window#launcher .shortcut {
+	color: #777777;
+	font-size: 0.85em;
+}
