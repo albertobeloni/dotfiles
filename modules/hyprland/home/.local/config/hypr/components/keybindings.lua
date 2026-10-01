@@ -26,10 +26,6 @@ hl.bind("ALT + Tab", function()
 	hl.dispatch(hl.dsp.window.cycle_next())
 	hl.dispatch(hl.dsp.window.bring_to_top())
 end)
-hl.bind("ALT + SHIFT + Tab", function()
-	hl.dispatch(hl.dsp.window.cycle_next())
-	hl.dispatch(hl.dsp.window.bring_to_top())
-end)
 
 -- Workspace: Focus and Move
 for i = 1, 10 do

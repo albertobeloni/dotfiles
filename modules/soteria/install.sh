@@ -1,1 +1,1 @@
-distribution arch && packages soteria-git
+distribution arch && aur soteria-git
