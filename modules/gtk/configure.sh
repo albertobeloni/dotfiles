@@ -5,8 +5,8 @@ post()
 		command mkdir -p "${HOME}/.local/config/gtk-3.0"
 		command mkdir -p "${HOME}/.local/config/gtk-4.0"
 
-		command cp -a "${module}/home/.local/data/gtk/themes/lumen-minima/nox-gtk3.css" "${HOME}/.local/config/gtk-3.0/gtk.css"
-		command cp -a "${module}/home/.local/data/gtk/themes/lumen-minima/nox-gtk4.css" "${HOME}/.local/config/gtk-4.0/gtk.css"
+		command cp -a "${path}/home/.local/data/gtk/themes/lumen-minima/nox-gtk3.css" "${HOME}/.local/config/gtk-3.0/gtk.css"
+		command cp -a "${path}/home/.local/data/gtk/themes/lumen-minima/nox-gtk4.css" "${HOME}/.local/config/gtk-4.0/gtk.css"
 
 		if command -v flatpak > "/dev/null" 2>&1
 		then
