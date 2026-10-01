@@ -19,7 +19,7 @@
 	fi
 
 	usage() {
-		command echo "Usage: ${0##*/} [install|configure] [module...]" >&2
+		command echo "Usage: ${0##*/} [-i|-c] [module...]" >&2
 		command exit 2
 	}
 
