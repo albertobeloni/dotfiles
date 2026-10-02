@@ -2,9 +2,9 @@
 vt = 1
 
 [initial_session]
-command = "UWSM_SILENT_START=2 uwsm start hyprland.desktop"
+command = "uwsm start hyprland.desktop > /dev/null"
 user = "YOURUSER"
 
 [default_session]
-command = "agreety --cmd 'uwsm start hyprland.desktop'"
+command = "agreety --cmd 'uwsm start hyprland.desktop > /dev/null'"
 user = "greeter"
