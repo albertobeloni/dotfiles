@@ -296,7 +296,7 @@ hl.config({
 	},
 
 	misc = {
-		background_color = lumen.background,
+		background_color = 0x000000,
 	},
 
 })
