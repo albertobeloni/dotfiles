@@ -26,6 +26,11 @@ hl.bind("ALT + Tab", function()
 	hl.dispatch(hl.dsp.window.cycle_next())
 	hl.dispatch(hl.dsp.window.bring_to_top())
 end)
+-- Window: Send to Desktop
+hl.bind(modifier .. " + SHIFT + left", hl.dsp.window.move({ window = "activewindow", direction = "left" }))
+hl.bind(modifier .. " + SHIFT + right", hl.dsp.window.move({ window = "activewindow", direction = "right" }))
+hl.bind(modifier .. " + SHIFT + up", hl.dsp.window.move({ window = "activewindow", direction = "up" }))
+hl.bind(modifier .. " + SHIFT + down", hl.dsp.window.move({ window = "activewindow", direction = "down" }))
 
 -- Workspace: Focus and Move
 for i = 1, 10 do

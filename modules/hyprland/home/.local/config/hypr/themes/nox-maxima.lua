@@ -267,7 +267,7 @@ hl.config({
 
 	general = {
 		col = {
-			active_border = lumen.blue[6],
+			active_border = 0x00000000,
 			inactive_border = lumen.base[14],
 			nogroup_border = lumen.base[14],
 			nogroup_border_active = lumen.indigo[6],

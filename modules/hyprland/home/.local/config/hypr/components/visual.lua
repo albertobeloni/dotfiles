@@ -2,9 +2,9 @@ hl.config({
 
 	general = {
 		gaps_in = 8,
-		gaps_out = 24,
-		border_size = 1,
-		layout = "scrolling",
+		gaps_out = 40,
+		border_size = -1,
+		layout = "dwindle",
 	},
 
 	group = {
@@ -30,7 +30,7 @@ hl.config({
 	},
 
 	animations = {
-		enabled = true,
+		enabled = false,
 	},
 
 	misc = {
