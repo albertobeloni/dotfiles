@@ -1,7 +1,7 @@
 local lumen = {}
 
-lumen.background = 0x111111ff
-lumen.foreground = 0xf1f1f1ff
+lumen.background = 0x111111
+lumen.foreground = 0xf1f1f1
 
 lumen.base = {
 	[0] = 0xe2e2e2ff,
